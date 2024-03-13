@@ -1,8 +1,15 @@
-var container = document.getElementByQuerySelector('.container');
-var thankYou =  document.getElementByQuerySelector('.thank-you');
-
+const mainContainer = document.querySelector('.container');
+const thanksContainer=  document.querySelector('.thank-you');
+const rating = document.getElementById('rating');
+const rates = document.querySelectorAll(".btn1")
 
 function displayRating(){
-    thankYou.style.display = 'block';
-    container.style.display = 'none';
+    thanksContainer.classList.remove("hidden");
+    mainContainer.style.display = 'none';
 }
+
+rates.forEach((rate) =>{
+    rate.addEventListener('click', ()=>{
+        rating.innerHTML = rate.innerHTML
+    })
+})

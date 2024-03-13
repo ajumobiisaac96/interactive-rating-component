@@ -29,7 +29,7 @@ body{
     max-width: 250px;
     width: 100%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .star img{
@@ -106,7 +106,10 @@ body{
     max-width: 250px;
     width: 100%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
+}
+
+.hidden{
     display: none;
 }
 
@@ -139,7 +142,7 @@ body{
 
 .message p{
     color:hsl(217, 12%, 63%);
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
 }
 
